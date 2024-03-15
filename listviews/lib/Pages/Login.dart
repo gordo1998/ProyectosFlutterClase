@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:listviews/Pages/PagePais.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key, required this.title});
@@ -93,6 +94,7 @@ class _Login extends State<Login> {
               child: ElevatedButton(
                 onPressed: (){
                   if(_finalFormKey.currentState!.validate()){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => PagePais(title: "hola")));
                     print("hila");
                     print("${controlerUser.text} ${controlerPassword.text}");
                   }
@@ -113,15 +115,11 @@ class _Login extends State<Login> {
    
     return Scaffold(
       appBar: AppBar(
-      
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-       
         title: Text(widget.title),
       ),
       body: Center(
-       
         child: Column(
-        
           children:[
             SizedBox(height: 20),
             imagenFlutter(),
