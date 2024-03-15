@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Estados Unidos",
+        "bandera": "assets/estadosUnidos.png",
+        "descripcion_corta": "País ubicado en América del Norte, conocido por su diversidad cultural y su influencia política y económica a nivel mundial.",
+        "descripcion_larga": "Estados Unidos es una nación diversa y dinámica ubicada en América del Norte. Con una población de más de 300 millones de habitantes, es conocida por su vasta extensión geográfica, su diversidad cultural y su papel dominante en la economía global. La historia del país está marcada por una serie de eventos significativos, incluida su independencia de Gran Bretaña en el siglo XVIII y su papel clave en la Segunda Guerra Mundial y la Guerra Fría. Estados Unidos es también conocido por su sistema político democrático y su capital, Washington D.C., es el centro de su gobierno federal. Además, el país es hogar de numerosas ciudades importantes, como Nueva York, Los Ángeles y Chicago, que contribuyen a su rica vida cultural y económica."
+    },
+    {
+        "nombre": "Brasil",
+        "bandera": "assets/brasil.jpg",
+        "descripcion_corta": "País sudamericano conocido por su diversidad natural, su cultura vibrante y su pasión por el fútbol.",
+        "descripcion_larga": "Brasil, el país más grande de América del Sur, es conocido por su exuberante diversidad natural, desde la selva amazónica hasta las playas de arena blanca. Además de su impresionante paisaje, Brasil es famoso por su cultura vibrante y su rica historia, influenciada por una mezcla única de culturas indígenas, africanas y europeas. La música y la danza son parte integral de la vida brasileña, con géneros como la samba y la bossa nova que han ganado fama internacional. Además, el fútbol es una pasión nacional, con Brasil siendo uno de los países más exitosos en la historia de este deporte. La diversidad étnica, la cocina deliciosa y la hospitalidad brasileña hacen de este país un destino fascinante para visitantes de todo el mundo."
+    },
+    {
+        "nombre": "Japón",
+        "bandera": "assets/japon.jpg",
+        "descripcion_corta": "País insular en Asia oriental conocido por su rica cultura, su tecnología avanzada y su gastronomía única.",
+        "descripcion_larga": "Japón es un país insular en Asia oriental que combina una rica historia y tradición con una tecnología avanzada y una cultura contemporánea vibrante. Conocido por su mezcla única de lo antiguo y lo moderno, Japón es el hogar de ciudades ultramodernas como Tokio y Kioto, así como de antiguos templos, santuarios y jardines zen. La cultura japonesa valora la cortesía, la modestia y el respeto por la naturaleza y la comunidad. Además, Japón es líder mundial en tecnología y desarrollo, siendo pionero en áreas como la electrónica, la robótica y la ingeniería automotriz. La gastronomía japonesa, que incluye sushi, ramen y tempura, es apreciada en todo el mundo por su frescura, sabor y presentación meticulosa."
+    },
+    {
+        "nombre": "Francia",
+        "bandera": "assets/francia.jpg",
+        "descripcion_corta": "País europeo conocido por su historia rica, su arte excepcional y su gastronomía sofisticada.",
+        "descripcion_larga": "Francia, situada en Europa occidental, es conocida por ser un destino turístico de primer orden, gracias a su rica historia, su arte excepcional y su gastronomía sofisticada. El país alberga una gran cantidad de monumentos históricos, desde la Torre Eiffel hasta el Palacio de Versalles, así como una impresionante colección de museos que albergan obras de arte de fama mundial, como el Louvre en París. La cultura francesa valora la elegancia, el estilo y el placer, y es conocida por sus contribuciones a la moda, la cocina y la literatura. La cocina francesa, con sus vinos finos, quesos exquisitos y platos elaborados, es considerada una de las mejores del mundo. Además, Francia es un importante centro de diplomacia y política internacional, siendo miembro permanente del Consejo de Seguridad de las Naciones Unidas."
+    },
+    {
+        "nombre": "China",
+        "bandera": "assets/china.jpg",
+        "descripcion_corta": "País en Asia oriental conocido por su antigua civilización, su gran muralla y su rápida modernización.",
+        "descripcion_larga": "China es una antigua civilización en Asia oriental que ha experimentado una rápida modernización en las últimas décadas, convirtiéndose en una potencia económica y política mundial. Con una historia que se remonta a miles de años, China ha sido el hogar de grandes inventos y descubrimientos, desde la brújula hasta la pólvora. La Gran Muralla China, una maravilla arquitectónica que se extiende a lo largo de miles de kilómetros, es uno de los símbolos más reconocidos del país. China es conocida por su vasta población, su rica cultura y sus tradiciones arraigadas, incluida la celebración del Año Nuevo Lunar y la práctica del tai chi. Además, el país ha experimentado un rápido crecimiento económico en las últimas décadas, convirtiéndose en una fuerza líder en la fabricación, la tecnología y el comercio global."
+    }
+]
