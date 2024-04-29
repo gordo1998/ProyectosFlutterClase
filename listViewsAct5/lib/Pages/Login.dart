@@ -4,6 +4,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:listviews/Pages/PagePais.dart';
+import 'package:listviews/Routes/routes.dart';
+import 'package:listviews/Routes/app_routes.dart';
+import 'package:flutter_gen/gen_l10n/app_local.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key, required this.title});
@@ -22,10 +25,13 @@ class _Login extends State<Login> {
   String? bye;
   final controlerUser = TextEditingController();
   final controlerPassword = TextEditingController();
+  final text;
+
+  
 
   String recibirPassword(){
     
-    return "J.barreda98";
+    return "1234";
   }
 
   bool comprobarPassword(password){
@@ -42,8 +48,8 @@ class _Login extends State<Login> {
     );
   }
 
-  Widget formulario(){
-
+  Widget formulario(BuildContext context){
+    final text = AppLocalizations.of(context)!;
     return Form(
       key: _finalFormKey,
       child: Padding(
@@ -75,9 +81,9 @@ class _Login extends State<Login> {
                 }else if(!value.contains(recibirPassword())){
                   return "Contraseña incorrecta!";
                 }else if(value.contains(recibirPassword())){
-                  if (!comprobarPassword(value)){
-                    return "Contraseña poco segura";
-                  }
+                  // if (!comprobarPassword(value)){
+                  //   return "Contraseña poco segura";
+                  // }
                 }
 
                 
@@ -94,12 +100,10 @@ class _Login extends State<Login> {
               child: ElevatedButton(
                 onPressed: (){
                   if(_finalFormKey.currentState!.validate()){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => PagePais(title: "hola")));
-                    print("hila");
-                    print("${controlerUser.text} ${controlerPassword.text}");
+                    Navigator.pushReplacementNamed(context, Routes.menu);
                   }
                 }, 
-                child: Text("Hola"),
+                child: Text(text.acceso),
               ),
             ),
         
@@ -112,7 +116,7 @@ class _Login extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
-   
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -123,7 +127,7 @@ class _Login extends State<Login> {
           children:[
             SizedBox(height: 20),
             imagenFlutter(),
-            formulario(),
+            formulario(context),
                            
           ],
         ),

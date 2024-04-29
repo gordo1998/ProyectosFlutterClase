@@ -22,7 +22,7 @@ class _Splash extends State<Splash> {
   @override
   void initState(){
     super.initState();
-    Future.delayed(const Duration(seconds: 5),).then((value) => {
+    Future.delayed(const Duration(seconds: 10),).then((value) => {
       Navigator.pushReplacementNamed(context, Routes.login)
     });
   }
@@ -32,25 +32,28 @@ class _Splash extends State<Splash> {
   Widget build(BuildContext context) {
    
     return Scaffold(
-      body: Column(
-        children: <Widget> [
-          const SizedBox(height: 50,),
-          SizedBox(
-            height: 200,
-            child: Stack(
-              children: [
-                Center(
-                  child: SizedBox(
-                    width: 200,
-                    height: 200,
-                    child: CircularProgressIndicator(),
-                  ),
-                ),
-                Center(child: Text("Cargando..."))
-              ],
-            ),
-          )
-        ],
+      body: Container(
+        color: Colors.amber[400],
+        child: Column(
+          children: <Widget> [
+            const SizedBox(height: 50,),
+            SizedBox(
+              height: 200,
+              child: Stack(
+                alignment: AlignmentDirectional.center,
+                children: [
+                  Center(
+                    child: SizedBox(
+                      width: 600,
+                      height: 600,
+                      child: Image.asset("assets/cat-loading (2).gif"),
+                    ),
+                  ), 
+                ],
+              ),
+            )
+          ],
+        ),
       )
     );
   }

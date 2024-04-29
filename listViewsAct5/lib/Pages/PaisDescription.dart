@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:listviews/Model/Pais.dart';
 import 'package:listviews/Model/listadoPaises.dart';
+import 'package:listviews/utils/ListaPaises.dart';
+import 'package:listviews/Routes/routes.dart';
+import 'package:listviews/Routes/app_routes.dart';
 
 
 class PaisDescription extends StatefulWidget {
@@ -41,8 +44,28 @@ class _PaisDescription extends State<PaisDescription> {
                 SizedBox(height: 20),
                 Text("Descripción:"),
                 Text("${widget.pais.descripcionLarga}"),
-                SizedBox(height: 30,)
-                
+                SizedBox(height: 30,),
+                ElevatedButton(
+                  onPressed: () => showDialog<String>(
+                    context: context,
+                    builder: (BuildContext context) => AlertDialog(
+                      title: Text("Eliminar Pais"),
+                      content: Text("Estás seguro de eliminiar este país?"),
+                      actions: <Widget> [
+                        TextButton(
+                          onPressed: (){
+                            ListaPaises.paises.remove(widget.pais);
+                            Navigator.pushNamed(context, Routes.listaPaises);
+                          }, 
+                          child: Text("Eliminar")
+                        ),
+                        TextButton(onPressed: () => Navigator.pop(context), 
+                        child: Text("Cancelar"),
+                        ),
+                      ],
+                    )
+                  ), 
+                  child: Text("Eliminar Pais")),
               ],
             ),
             

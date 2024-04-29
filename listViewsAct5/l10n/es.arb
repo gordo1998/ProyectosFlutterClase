@@ -1,0 +1,20 @@
+{
+    "@@locale": "es",
+    "precios" : "Precios",
+    "aguacate" : "Aguacate",
+    "kiwis" : "Kiwis",
+    "manzanas" : "Manzanas",
+    "naranjas" : "Naranjas",
+    "peras" : "Peras",
+    "pinyas" : "Piñas",
+    "productos" : "Productos",
+    "es" : "Español",
+    "en" : "Inglés",
+    "ar" : "Árabe",
+    "fr" : "Francés",
+    "login" : "Inicio de Sesion",
+    "acceso" : "Acceso",
+    "menu" : "Menú",
+    "paises" : "Paises",
+    "pais" : "Pais"
+}
